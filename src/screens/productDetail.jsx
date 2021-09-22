@@ -62,11 +62,11 @@ export default function ProductDetail() {
   let { keys } = useParams();
   let { pname, price, delivery, image } = allProducts[keys];
   return (
-    <div>
+     <div>
       <img src={image} style={{ width: "200px" }} />
       <h1>{pname}</h1>
-      <h2>{delivery}</h2>
-      <h2>{price}</h2>
+      <h2>Delivery Type : {delivery}</h2>
+      <h2>Price : {price}</h2>
     </div>
   );
 }
